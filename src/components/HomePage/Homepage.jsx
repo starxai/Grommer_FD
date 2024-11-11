@@ -1,37 +1,15 @@
-import { useState, useRef, useEffect } from "react";
-import { NavLink, Navigate, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Quotations from "./Qutoes";
 import Footer from "../Footer";
-import GetInTouch from "./GetInTouch";
-import ReasonToUseGroomer from "../ReasonToUseGroomer";
-// import NewCard from "./CardsMain";
-import Card from "./Card";
-import GroomerCard from "./GroomerCard";
-import HomeSaloon from "../HomeSallonService";
-import Login from "./LoginPage";
-import { Link, Outlet } from "react-router-dom";
-import RegisterFormPage from "../Register";
-import AboutPage from "./AboutUsPage";
-import SalonMainPage from "./SalonDetailPage";
-import GroomerLayout from "./Rough";
-import ProductCard from "../../ProductCard";
-import PageBooking from "./SaloonBookingPage";
-import Navbar from "./NavbarComponent";
-import NavBar2 from "./NavbarComponent2";
-import BackGroundImage from "../HomePageImage";
-import image_one from "../images/image_slider_image.jpg";
 import Carousel from "./Carousel";
-
 import poster_small_1 from "../images/homepage-poster-1.png";
 import poster_small_2 from "../images/homepage-poster-2.png";
 import poster_big from "../images/homepage-poster-3.png";
-
 import img_1 from "../images/img1.jpg";
 import img_2 from "../images/img2.jpg";
 import img_3 from "../images/img3.jpg";
 import img_4 from "../images/img4.jpg";
-
 import slider_img_landscape from "../images/image_slider_image.jpg";
 import slider_img_portrait from "../images/slider_image_portrait.png";
 import reasons_to_use from "../images/reasons-to-use.png";
