@@ -19,7 +19,7 @@ function SalonPage() {
     const fetchSalonData = async () => {
       try {
         const { data } = await axios(
-          `http://localhost:8000/user/salon?uuid=${salon_uuid}`
+          `http://groomerloadbalancer-1779385022.ap-south-1.elb.amazonaws.com/api/user/salon?uuid=${salon_uuid}`
         );
         setSalonData(data.data.salon);
         console.log(data);
