@@ -32,7 +32,7 @@ function SalonListPage() {
   const [minRating, setMinRating] = useState(0);
   const [sortBy, setSortBy] = useState("popularity");
   const [url, setUrl] = useState(
-    "http://localhost:8000/user/salons?city=nellore"
+    "http://groomerloadbalancer-1779385022.ap-south-1.elb.amazonaws.com/api/user/salons?city=nellore"
   );
   useEffect(() => {
     const fetchSalonData = async () => {
@@ -51,7 +51,7 @@ function SalonListPage() {
   }, [url]);
 
   function filterParams() {
-    let dummyUrl = "http://localhost:8000/user/salons?city=nellore";
+    let dummyUrl = "http://groomerloadbalancer-1779385022.ap-south-1.elb.amazonaws.com/api/user/salons?city=nellore";
     if (sex !== "unisex") {
       dummyUrl = dummyUrl + `&sex=${sex}`;
     }
