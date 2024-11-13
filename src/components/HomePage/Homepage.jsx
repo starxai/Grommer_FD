@@ -27,7 +27,7 @@ function HomePage() {
     async function fetchSalons() {
       try {
         const { data } = await axios.get(
-          "http://127.0.0.1:8000/user/salons?city=nellore"
+          "http://groomerloadbalancer-1779385022.ap-south-1.elb.amazonaws.com/api/user/salons?city=nellore"
         );
         setLoading(false);
         setSalons(data.data.salons);
